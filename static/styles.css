@@ -1,0 +1,47 @@
+#wrapper{
+    margin: 0px auto;
+    width: 1000px;
+    height: 1000px;
+    background-color: black;
+}
+
+#head{
+    height: 100px;
+    background-color: yellow;
+}
+
+#body{
+    height: 800px;
+    background-color: green;
+}
+
+#footer{
+    height: 100px;
+    background-color: red;
+}
+
+#content{
+    height: 790px;
+    width: 700px;
+    background-color: pink;
+    display: inline-block;
+    
+}
+
+#login{
+    height: 200px;
+    width: 290px;
+    background-color: blue;
+    display: inline-block;
+    vertical-align: top
+    
+}
+
+/* #side{
+    height: 570px;
+    width: 290px;
+    background-color: orange;
+    display: inline-block;
+    vertical-align: top;
+} */
+

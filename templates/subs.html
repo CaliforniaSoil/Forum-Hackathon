@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> 
+    <title>Subshreddit</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="head">
+            <h1>Heres where we will load our subreddit pages</h1>
+        </div>
+        <div id="body">
+            <div id="content">
+                    {% for p in posts: %}
+                    
+                        <a href="#">{{p['title']}}</a>
+                            
+                            <br><br>
+                
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

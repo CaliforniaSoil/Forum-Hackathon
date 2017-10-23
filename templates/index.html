@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Shreddit home</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="head">
+            <h1>Heres where the homepage would go</h1>
+            <a href="subs">subs</a>
+            <a href="register">register</a>
+            <a href="users">users</a>
+            <a href="submit">submit</a>
+            <a href="posts">posts</a>
+        </div>
+        <div id="body">
+            <div id="content">
+            </div>
+            <div id="login">
+                <form id="login" action="/logAndReg" method="post">
+                    <br>
+                    <strong>Sign In</strong>
+                    <br>
+                    <input type="hidden" name="action" value="signIn">
+                    <table>
+                        <tr><th></th><th></th></tr>
+                        <tr><td>
+                            <label for="username">Username:</td><td><input type="text" name="username" id="username"></label>
+                        </td></tr><tr><td>
+                            <label for="password">Password:</td><td><input type="password" name="password" id="password"></label>
+                        </td></tr>
+                    </table>
+                    <div id="submit">
+                        <input type="submit" name="go" value="Submit">
+                    </div>
+                </form>
+                <form id="getOUT" action="/byeFelicia" method="post">
+                    <input type="hidden" name="action" value="logOff">
+                    <input type="submit" name="logOff" value="Sign Off">
+                </form>
+            </div>
+            <!-- <div id="side">
+            </div> -->
+        </div>
+        <div id="footer">
+                
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
